@@ -1,0 +1,157 @@
+.side-nav {
+  background-color: var(--secondary-color);
+  min-height: 100%;
+  transition: width 0.5s;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+  z-index: 10;
+}
+
+.side-nav-open {
+  width: 14%;
+  height: 100%;
+  min-height: 100%;
+  padding-right: 1rem;
+}
+
+.side-nav-close {
+ max-width: 0;
+ transition: width 1s;
+}
+
+.nav-item-active {
+  background-color: #fff;
+  color: #000000;
+}
+
+.nav-item-inactive {
+  color: #fff;
+}
+
+.nav-item:hover {
+  background-color: #fff;
+  color: #000000;
+}
+
+.nav-item {
+  margin-top: 2rem;
+  width: 10rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  align-items: center;
+  gap: 1rem;
+  display: flex;
+  transition: 0.8s;
+}
+
+.content-container {
+  margin-left: 14%;
+  margin-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-btn {
+  color: #000000;
+  text-align: center;
+  position: fixed;
+  display: none;
+  top: 0.2rem;
+  border-radius: 100%;
+  background-color: var(--secondary-color);
+}
+
+.nav-btn-small {
+  max-width: 10%;
+  left: 1rem;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+  .side-nav {
+   width: 20%;
+  } 
+ 
+  .nav-btn {
+    display: block;
+   left: 16%;
+ }
+
+ .nav-btn-small {
+  left: 1rem;
+}
+ 
+ .content-container {
+   margin-left: 4%;
+ }
+
+ }
+
+@media screen and (max-width: 768px) {
+
+ .side-nav {
+  width: 28%;
+ } 
+
+ .nav-btn {
+  left: 22%;
+}
+
+.nav-btn-small {
+ left: 1rem;
+}
+}
+
+@media screen and (max-width: 425px) {
+
+  .side-nav {
+   width: 50%;
+  } 
+
+  .nav-btn {
+    left: 40%;
+  }
+  
+  .nav-btn-small {
+   left: 1rem;
+  }
+
+  .rbc-month-view {
+    display: none;
+  }
+ }
+
+ @media screen and (max-width: 375px) {
+
+  .side-nav {
+    width: 55%;
+   } 
+
+   .nav-btn {
+    left: 45%;
+  }
+  
+  .nav-btn-small {
+   left: 1rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+
+  .side-nav {
+    width: 62%;
+   } 
+
+   .nav-btn {
+    left: 50%;
+  }
+  
+  .nav-btn-small {
+   left: 1rem;
+  }
+}
